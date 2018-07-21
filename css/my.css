@@ -1,0 +1,266 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #F4F5F7;
+}
+.header{
+	height: 48px;
+	width: 100%;
+	background-color: #333333;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+.header span{
+	display: block;
+	color: white;
+	font-size: 16px;
+	width: 40px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	position: relative;
+}
+.header span:first-child{
+	left: 10px;
+}
+.header span:last-child{
+	left: 0;
+}
+.header a{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	display: block;
+}
+
+nav.footer{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #fff;
+	z-index: 1000;
+}
+
+nav.footer:before{
+	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-top: 1px solid #e9e9e9;
+    content: " ";
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform:scale(1,0.3);
+    -webkit-transform: scale(1,0.3);
+}
+nav.footer a{
+	color: #777;
+	text-decoration: none;
+}
+.icon-font{
+	font-family: "mfont";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+}
+.nav-list i{
+	width: 24px;
+	height: 24px;
+	display: block;
+	position: relative;
+	top: 8px;
+	left: 9px;
+	background-size: 24px 24px;
+}
+.nav-list{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 0px;
+}
+.nav-list li{
+	height: 100%;
+	width: 42px;
+	margin: 0 24px;
+	display: inline-block;
+	text-align: center;
+}
+.nav-list li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+.nav-list li a:after{
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	margin-left: -21px;
+	width: 42px;
+	font-size: 10px;
+	content: attr(data-item);
+}
+
+.clearfix:after{
+	content:" ";
+	display: block;
+	clear: both;
+}
+li.nav-list-item-current a{
+	color: #d5ab5e;
+}
+.i-home{
+	background-image: url(../img/home.png);
+}
+.i-discover{
+	background-image: url(../img/发现.png);
+}
+.i-friend{
+	background-image: url(../img/friends.png);
+}
+.i-my{
+	background-image: url(../img/my_active.png);
+}
+a{
+	text-decoration: none;
+	color: #000;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*头像部分*/
+.main{
+	position: relative;
+	top: 47px;
+}
+.portrait{
+	width: 100%;
+	height: 70px;
+	background-color: #333333;
+	position: relative;
+}
+.portrait a{
+	display: block;
+	width: 100%;
+	height: 70px;
+}
+.portrait a:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.portrait div{
+	float: left;
+}
+.portrait-left{
+	width: 20%;
+	height: 100%;text-align: center;
+}
+.portrait-left img{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	position: relative;
+}
+.portrait-right{
+	width: 80%;
+	height: 100%;
+}
+.portrait-right h3{
+	font-size: 18px;
+	color: white;
+	padding-top: 5px;
+}
+.portrait-right p{
+	font-size: 12px;
+	color: #DCDCDC;
+	padding-top: 3px;
+}
+.portrait-right img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.my-tab{
+	margin-top: 10px;
+	width: 100%;
+	position: relative;
+}
+.my-tab li{
+	width: 100%;
+	height: 50px;
+	list-style-type: none;
+	position: relative;
+}
+.my-tab li a{
+	display: block;
+	width: 100%;
+}
+.my-tab li a:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.my-tab li span{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position:relative;
+	float: left;
+}
+.my-tab li img{
+	width: 25px;
+	height: 25px;
+	border-radius: 5px;
+	position: relative;
+	top: 12px;
+	left: 15px;
+}
+.my-tab li p{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #333333;
+	position: relative;
+	float: left;
+	left: 5px;
+}
+.my-tab li span:last-child{
+	position: relative;
+	float: right;
+}
+.my-tab li span:last-child img{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 15px;
+	left: 20px;
+}
+.my-tab-hr{
+	width: 320px;
+	height: 1px;
+	background-color: #DCDCDC;
+	display: block;
+	float: right;
+}
+.my-tab-item{
+	width: 100%;
+	position:relative;
+	margin-top: 10px;
+	background-color: white;
+}

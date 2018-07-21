@@ -1,0 +1,291 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #F4F5F7;
+}
+.header{
+	height: 48px;
+	width: 100%;
+	background-color: #333333;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+.header span{
+	display: block;
+	color: white;
+	font-size: 16px;
+	width: 40px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	position: relative;
+	left: 10px;
+}
+.header a{
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	top: 12px;
+}
+.friends{
+	right: 45px;
+}
+.add{
+	right: 10px;
+}
+.search{
+	right: 80px;
+}
+.header a img{
+	width: 100%;
+	height: 100%;
+}
+
+nav.footer{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #fff;
+	z-index: 1000;
+}
+
+nav.footer:before{
+	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-top: 1px solid #e9e9e9;
+    content: " ";
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform:scale(1,0.3);
+    -webkit-transform: scale(1,0.3);
+}
+nav.footer a{
+	color: #777;
+	text-decoration: none;
+}
+.icon-font{
+	font-family: "mfont";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+}
+.nav-list i{
+	width: 24px;
+	height: 24px;
+	display: block;
+	position: relative;
+	top: 8px;
+	left: 9px;
+	background-size: 24px 24px;
+}
+.nav-list{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 0px;
+}
+.nav-list li{
+	height: 100%;
+	width: 42px;
+	margin: 0 24px;
+	display: inline-block;
+	text-align: center;
+}
+.nav-list li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+.nav-list li a:after{
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	margin-left: -21px;
+	width: 42px;
+	font-size: 10px;
+	content: attr(data-item);
+}
+
+.clearfix:after{
+	content:" ";
+	display: block;
+	clear: both;
+}
+li.nav-list-item-current a{
+	color: #d5ab5e;
+}
+.i-home{
+	background-image: url(../img/home.png);
+}
+.i-discover{
+	background-image: url(../img/发现_active.png);
+}
+.i-friend{
+	background-image: url(../img/friends.png);
+}
+.i-my{
+	background-image: url(../img/my.png);
+}
+a{
+	text-decoration: none;
+	color: #000;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*
+ 首页快捷支付部分
+ * */
+.main{
+	width: 100%;
+	position: relative;
+	top: 47px;
+}
+.clipper{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.clipper div{
+	width: 100px;
+	height: 100%;
+	padding: 0 12px;
+	display: inline-block;
+	position: relative;
+	box-sizing: content-box;
+}
+.clipper div:after{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 80px;
+	background-color: #DCDCDC;
+	position: relative;
+	top: -72px;
+	right: -12px;
+	float: right;
+}
+.clipper div:last-child:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.clipper div a{
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.clipper div a img{
+	width: 40px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.clipper div a p{
+	color: #333333;
+	font-size: 13px;
+	width: 100%;
+	height: 20px;
+	align-self: center;
+	text-align: center;
+}
+.clipper div a span{
+	display: block;
+	color: #777777;
+	font-size: 11px;
+	width: 100%;
+	align-self: center;
+	text-align: center;
+}
+
+/*聊天列表*/
+.content{
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.content-item{
+	list-style: none;
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	margin-bottom: 1px;
+}
+.content-item a:after{
+	display: block;
+	content: "";
+	width: 100%;
+	height: 1px;
+/*	background-color: #DCDCDC;*/
+	clear: both;
+}
+.content-item div{
+	height: 70px;
+	float: left;
+}
+a{
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.content-item img{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.content-item a{
+	display: block;
+}
+
+.item-left{
+	text-align: center;
+	position: relative;
+	width: 20%;
+	height: 70px;
+	border-radius: 5px;
+}
+.item-right{
+	position: relative;
+	width: 80%;
+	height: 70px;
+}
+.item-right h3{
+	font-size: 16px;
+	margin: 10px 0 5px 0;
+	color: #333333;
+}
+.item-right p{
+	font-size: 11px;
+	color: #777777;
+}
+.item-right span{
+	font-size: 11px;
+	color: #777777;
+	position: relative;
+	float: right;
+	right: 10px;
+	top: -35px;
+}
